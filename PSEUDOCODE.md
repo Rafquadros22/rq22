@@ -8,7 +8,7 @@ User will have 40 seconds to complete quiz
 when user selects answer pause quiz and alert if answer
 is right or wrong.
 
-if user is worng subtract - 1 from the timer.
+if user is wrong subtract - 2 from the timer.
 
 if countdown reaches 0 end quiz 
 

@@ -1,23 +1,28 @@
-
+*html{
+    height: 100%;
+}
 
 body{
     font-family: 'Roboto Mono', monospace;
     padding: 0;
+    background-color: brown;
 }
 
  .container-fluid{ 
     justify-items: center;
     text-align: center;
     margin-top: 12%;
-    background-color: hotpink;
+    background-color: black;
     align-self: center;
      max-width: 294px; 
-    border-radius: 25px;
+    border-radius: 0;
+    box-shadow: 2px cornsilk;
+    
 }
 
 
 button{
-    border-radius: 25px;
+    border-radius: 0;
     text-align: center !important;
     
 }
