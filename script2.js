@@ -119,7 +119,7 @@ startBtn.addEventListener("click", function (event) {
     setTimeout(nextQuestion, 2000);
   }
 
-  //count = new component("30px", "Consolas", "black", 280, 40, "text");
+
 
   function finishQuiz() {
     clearInterval(intervalId);
@@ -129,6 +129,7 @@ startBtn.addEventListener("click", function (event) {
   }
 
   function showHs() {
+      //ask user for name for high score
     var name = prompt("Please enter your initials for high score");
     var high_scores = localStorage.getItem("scores");
     if (!high_scores) {
@@ -152,7 +153,7 @@ startBtn.addEventListener("click", function (event) {
         "name: " + high_scores[i].name + " score " + high_scores[i].score;
       contentUL.appendChild(contentLI);
     }
-
+    
     //restart button
     var button = document.createElement("button");
 
@@ -179,7 +180,7 @@ startBtn.addEventListener("click", function (event) {
     resetHs.addEventListener("click", function () {
       localStorage.setItem("scores", JSON.stringify([]));
     });
-    //ask user for name for high score
+  
   }
 
   renderQuestion();
